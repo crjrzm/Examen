@@ -1,4 +1,5 @@
-﻿using Clases.buslog.Operaciones;
+﻿using Clases.buslog;
+using Clases.buslog.Operaciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,28 @@ namespace WcfExamen.wcf
     public class RealizarOperacion : IRealizarOperacion
     {
         [OperationContract]
-        public void RealizarOperacion(double a, double b, double k, double potencia, int tipoOperacion)
+        public void RealizarOperacion(double a, double b, double k, double x,double potencia, int tipoOperacion)
         {
             string res = string.Empty;
             try
             {
-                //Integral integral = CalcularIntegral(a, b, k, tipoOperacion, potencia);
+                Integral resultado = new Seno();
+                if (tipoOperacion == (int)TiposOperaciones.Seno)
+                    resultado = new Seno();
+                else if (tipoOperacion == (int)TiposOperaciones.Constante)
+                    resultado = new Constante();
+                else if (tipoOperacion == (int)TiposOperaciones.Potencia)
+                    resultado = new Potencia();
+                else if (tipoOperacion == (int)TiposOperaciones.Logaritmo)
+                    resultado = new Logaritmo();
+                else if (tipoOperacion == (int)TiposOperaciones.Exponencial)
+                    resultado = new Exponencial();
+                else if (tipoOperacion == (int)TiposOperaciones.Seno)
+                    resultado = new Seno();
+                else if (tipoOperacion == (int)TiposOperaciones.Coseno)
+                    resultado = new Coseno();
+
+                resultado.CalcularIntegral(a, b, k, x, potencia);
 
             }
             catch (Exception ex)

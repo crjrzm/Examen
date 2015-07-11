@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clases.buslog
 {
-    enum TiposOperaciones
+    public enum TiposOperaciones
     {
         Simple = 1,
         Constante = 2,

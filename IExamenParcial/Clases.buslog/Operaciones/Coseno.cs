@@ -8,5 +8,9 @@ namespace Clases.buslog.Operaciones
 {
     public class Coseno : Integral
     {
+        public double CalcularIntegral(double a, double b, double k, double x, double potencia)
+        {
+            return (Math.Pow(Math.Sin(x), b) - Math.Pow(Math.Sin(x), a));
+        }
     }
 }
