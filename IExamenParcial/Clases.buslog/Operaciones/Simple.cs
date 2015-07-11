@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Clases.buslog.Operaciones
 {
-    public class Simple
+    public class Simple : Integral
     {
+        public double CalcularIntegralSimple(double a, double b, double constante, double potencia)
+        {
+
+            return 0;
+        }
     }
 }
