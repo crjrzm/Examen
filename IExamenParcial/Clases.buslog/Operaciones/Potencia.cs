@@ -13,6 +13,8 @@ namespace Clases.buslog.Operaciones
         {
             double retorno= 0.0;
             retorno = (Math.Pow(k, (n + 1)))/(n+1);
+
+
             return retorno;
         }
     }
