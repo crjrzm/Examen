@@ -39,14 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Operaciones\Constante.cs" />
     <Compile Include="Operaciones\Coseno.cs" />
     <Compile Include="Operaciones\Exponencial.cs" />
+    <Compile Include="Operaciones\Integral.cs" />
     <Compile Include="Operaciones\Logaritmo.cs" />
     <Compile Include="Operaciones\Potencia.cs" />
     <Compile Include="Operaciones\Seno.cs" />
     <Compile Include="Operaciones\Simple.cs" />
+    <Compile Include="Operaciones\Validador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Clases.buslog.Operaciones
+{
+    public class Validador
+    {
+        public bool ValidarParametros(double a, double b)
+        {
+            return a < b;
+        }
+    }
+}
