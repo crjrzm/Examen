@@ -13,33 +13,37 @@ namespace WcfExamen.wcf
     public class RealizarOperacion : IRealizarOperacion
     {
         [OperationContract]
-        public double RealizarOperacion(double a, double b, double k, double x,double potencia, int tipoOperacion)
+        public double RealizarOperacion(double a, double b, double k, double n,int tipoOperacion)
         {
-            string res = string.Empty;
+            string respuesta = string.Empty;
+            double resultado = 0;
             try
             {
-                Integral resultado = null;
-                if (tipoOperacion == (int)TiposOperaciones.Seno)
-                    resultado = new Seno();
+                Integral integral = null;
+                if (tipoOperacion == (int)TiposOperaciones.Simple)
+                    integral = new Simple();
                 else if (tipoOperacion == (int)TiposOperaciones.Constante)
-                    resultado = new Constante();
+                    integral = new Constante();
                 else if (tipoOperacion == (int)TiposOperaciones.Potencia)
-                    resultado = new Potencia();
+                    integral = new Potencia();
                 else if (tipoOperacion == (int)TiposOperaciones.Logaritmo)
-                    resultado = new Logaritmo();
+                    integral = new Logaritmo();
                 else if (tipoOperacion == (int)TiposOperaciones.Exponencial)
-                    resultado = new Exponencial();
+                    integral = new Exponencial();
                 else if (tipoOperacion == (int)TiposOperaciones.Seno)
-                    resultado = new Seno();
+                    integral = new Seno();
                 else if (tipoOperacion == (int)TiposOperaciones.Coseno)
-                    resultado = new Coseno();
+                    integral = new Coseno();
+
+                resultado =  integral.CalcularIntegral(a, b, k, n);
 
             }
             catch (Exception ex)
             {
-                res = ex.Message;
-                res += " | " + ex.InnerException.Message;
+                respuesta = ex.Message;
+                respuesta += " | " + ex.InnerException.Message;
             }
+            return resultado;
         }
     }
 }

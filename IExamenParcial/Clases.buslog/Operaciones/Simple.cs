@@ -9,13 +9,10 @@ namespace Clases.buslog.Operaciones
     public class Simple : Integral
     {
 
-        public double CalcularIntegral(double a, double b, double k)
+        public double CalcularIntegral(double a, double b, double k, double n)
         {
             double retorno = 0.0;
-
             retorno = b - a;
-
-
             return retorno;
         }
     }

@@ -9,7 +9,7 @@ namespace Clases.buslog.Operaciones
 {
     public interface Integral
     {
-        public double CalcularIntegral(double a, double b, double k, double n);
+        double CalcularIntegral(double a, double b, double k, double n);
         
     }
 

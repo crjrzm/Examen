@@ -12,9 +12,6 @@ namespace WcfExamen.wcf
     public interface IRealizarOperacion
     {
         [OperationContract]
-        public void RealizarOperacion(double a, double b, double constante, double potencia)
-        {
-           
-        }
+        double RealizarOperacion(double a, double b, double k, double n, int tipoOperacion);
     }
 }
