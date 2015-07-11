@@ -8,7 +8,7 @@ namespace Clases.buslog.Operaciones
 {
     public class Simple : Integral
     {
-        public double CalcularIntegralSimple(double a, double b, double constante, double potencia)
+        public double CalcularIntegral(double a, double b, double constante, double potencia)
         {
 
             return 0;

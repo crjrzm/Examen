@@ -8,7 +8,7 @@ namespace Clases.buslog.Operaciones
 {
     public class Validador
     {
-        public bool ValidarParametros(double a, double b)
+        public bool CalcularIntegral(double a, double b)
         {
             return a < b;
         }

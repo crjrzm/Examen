@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clases.buslog.Operaciones
 {
-    public class Exponencial
+    public class Exponencial : Integral
     {
     }
 }
