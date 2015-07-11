@@ -6,8 +6,13 @@ namespace Clases.buslog.Operaciones
     {
         public double CalcularIntegral(double a, double b, double k, double x, double potencia)
         {
-            return (Math.Pow(-1 * Math.Cos(x), b) - Math.Pow(-1 * Math.Cos(x), a));
+            double resultado = 0;
+            if (new Validador().MenorAqueB(a, b))
+                resultado = (Math.Pow(-1 * Math.Cos(x), b) - Math.Pow(-1 * Math.Cos(x), a));
+            else
+                throw new Exception(@"La variable a es mayor que b");
+            return resultado;
         }
-        
+
     }
 }

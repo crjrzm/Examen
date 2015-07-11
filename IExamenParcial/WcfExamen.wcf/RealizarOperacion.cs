@@ -13,12 +13,12 @@ namespace WcfExamen.wcf
     public class RealizarOperacion : IRealizarOperacion
     {
         [OperationContract]
-        public void RealizarOperacion(double a, double b, double k, double x,double potencia, int tipoOperacion)
+        public double RealizarOperacion(double a, double b, double k, double x,double potencia, int tipoOperacion)
         {
             string res = string.Empty;
             try
             {
-                Integral resultado = new Seno();
+                Integral resultado = null;
                 if (tipoOperacion == (int)TiposOperaciones.Seno)
                     resultado = new Seno();
                 else if (tipoOperacion == (int)TiposOperaciones.Constante)
@@ -34,14 +34,11 @@ namespace WcfExamen.wcf
                 else if (tipoOperacion == (int)TiposOperaciones.Coseno)
                     resultado = new Coseno();
 
-                resultado.CalcularIntegral(a, b, k, x, potencia);
-
             }
             catch (Exception ex)
             {
                 res = ex.Message;
                 res += " | " + ex.InnerException.Message;
-
             }
         }
     }

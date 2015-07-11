@@ -8,7 +8,7 @@ namespace Clases.buslog.Operaciones
 {
     public class Validador
     {
-        public Boolean MenorAqueB(double a, double b) {
+        public bool MenorAqueB(double a, double b) {
             bool retorno = false;
             if(a<b){
                 retorno = true;
