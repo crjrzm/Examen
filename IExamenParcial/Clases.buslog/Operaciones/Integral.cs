@@ -8,9 +8,8 @@ namespace Clases.buslog.Operaciones
 {
     public interface Integral
     {
-        public double CalcularIntegralSimple(double a, double b, double k)
-        {
-            return 0;
-        }
+        public double CalcularIntegral(double a, double b, double k, double n);
+        
     }
+
 }
