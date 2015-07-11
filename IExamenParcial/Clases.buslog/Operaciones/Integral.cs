@@ -9,7 +9,7 @@ namespace Clases.buslog.Operaciones
 {
     public interface Integral
     {
-        public Integral CalcularIntegral(double a, double b, double k, int tipoOperacion)
+        public Integral CalcularIntegral(double a, double b, double k, int tipoOperacion, double potencia)
         {
             Integral resultado = new Seno();
             if (tipoOperacion == (int)TiposOperaciones.Seno)
