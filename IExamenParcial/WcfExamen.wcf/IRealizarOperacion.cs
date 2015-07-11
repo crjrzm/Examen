@@ -14,18 +14,7 @@ namespace WcfExamen.wcf
         [OperationContract]
         public void RealizarOperacion(double a, double b, double constante, double potencia)
         {
-            string res = string.Empty;
-            try
-            {
-
-                /////
-            }
-            catch (Exception ex)
-            {
-                res = ex.Message;
-                res += " | " + ex.InnerException.Message;
-                
-            }
+           
         }
     }
 }

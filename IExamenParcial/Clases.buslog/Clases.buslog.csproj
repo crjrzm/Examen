@@ -49,6 +49,7 @@
     <Compile Include="Operaciones\Simple.cs" />
     <Compile Include="Operaciones\Validador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TiposOperaciones.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
