@@ -8,9 +8,13 @@ namespace Clases.buslog.Operaciones
 {
     public class Validador
     {
-        public bool ValidarParametros(double a, double b)
-        {
-            return a < b;
+        public Boolean MenorAqueB(double a, double b) {
+            bool retorno = false;
+            if(a<b){
+                retorno = true;
+            }
+            return retorno;
         }
     }
+
 }
