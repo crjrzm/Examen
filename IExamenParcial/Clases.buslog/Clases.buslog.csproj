@@ -40,8 +40,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Operaciones\Constante.cs" />
+    <Compile Include="Operaciones\Coseno.cs" />
+    <Compile Include="Operaciones\Exponencial.cs" />
+    <Compile Include="Operaciones\Logaritmo.cs" />
+    <Compile Include="Operaciones\Potencia.cs" />
+    <Compile Include="Operaciones\Seno.cs" />
+    <Compile Include="Operaciones\Simple.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
