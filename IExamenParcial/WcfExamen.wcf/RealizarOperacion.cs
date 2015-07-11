@@ -12,8 +12,7 @@ namespace WcfExamen.wcf
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "RealizarOperacion" in both code and config file together.
     public class RealizarOperacion : IRealizarOperacion
     {
-        [OperationContract]
-        public double RealizarOperacion(double a, double b, double k, double n,int tipoOperacion)
+        public double RealizarOperacionIntegral(double a, double b, double k, double n,int tipoOperacion)
         {
             string respuesta = string.Empty;
             double resultado = 0;
